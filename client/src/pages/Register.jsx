@@ -14,7 +14,7 @@ export const Register = (props) => {
         <div className="flex flex-col justify-center items-center font-publicsans p-20 border-2 border-primary"> 
         <form className="flex flex-col items-center"onSubmit={handleSubmit}>
             <label className="text-left py-1 px-0 text-primary" htmlFor="full name">Full name</label>
-            <input className="my-2 mx-0 p-4 rounded border-primary border-2" value={name} name="name" id="name" placeholder="Full Name"></input>
+            <input className="my-2 mx-0 p-4 rounded border-primary border-2" value={name} onChange={(e) => setName(e.target.value)} name="name" id="name" placeholder="Full Name"/>
             <label className="text-left py-1 px-0 text-primary" htmlFor="email">Email</label>
             <input className="my-2 mx-0 p-4 rounded border-primary border-2" value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="youremail@email.com" id="email" name="email"/>
             <label className="text-left py-1 px-0 text-primary" htmlFor="password">Password</label>
